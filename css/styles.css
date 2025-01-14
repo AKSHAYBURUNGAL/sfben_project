@@ -1,0 +1,139 @@
+/* Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background: #142850;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #f8f9fa;
+    letter-spacing: 2px;
+}
+
+/* Content Styling */
+.content {
+    margin: 40px 20px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 900px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f0f8ff;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Articles Section */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Article Card Styling */
+.article-card {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.article-card h3 {
+    color: #f8f9fa;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    color: #dce7f1;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Buttons Section */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn.read-more {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn.read-more:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn.share {
+    background: #28a745;
+    color: #fff;
+}
+
+.btn.share:hover {
+    background: #1e7e34;
+    transform: translateY(-2px);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: auto;
+    background: #142850;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    color: #f8f9fa;
+    font-size: 1rem;
+}
