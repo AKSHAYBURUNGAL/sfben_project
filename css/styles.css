@@ -1,3 +1,47 @@
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #142850;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li {
+    display: inline;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f8f9fa;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav .nav-links a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
 /* Reset and Box Sizing */
 * {
     margin: 0;
